@@ -1,22 +1,30 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zenith Testimonial Slider</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Slider de Depoimentos</title>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
       body {
         font-family: 'Inter', sans-serif;
         background-color: #f9fafb;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
       .font-mono {
         font-family: 'JetBrains+Mono', monospace;
       }
     </style>
-  <script type="importmap">
+    <script type="importmap">
 {
   "imports": {
     "react/": "https://esm.sh/react@^19.2.3/",
@@ -27,8 +35,10 @@
   }
 }
 </script>
-</head>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
   <body>
-    <div id="root"></div>
+    <div id="root" style="width: 100%; display: flex; justify-content: center; align-items: center;"></div>
+    <script type="module" src="/index.tsx"></script>
   </body>
 </html>
